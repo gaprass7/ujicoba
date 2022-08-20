@@ -1,0 +1,44 @@
+.navbar {
+    background-color: rgba(10, 10,10, 0.651);
+    overflow: hidden;
+
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+.navbar ul li {
+    display: inline-block;
+    float: right;
+}
+
+.navbar ul li a {
+    display: block;
+    color: gold;
+    text-decoration: none;
+    padding: 14px 16px;
+}
+
+.conten {
+    background-image: url(img/photo-1531279550271-23c2a77a765c.jpg);
+    background-attachment: fixed;
+}
+
+.conten img {
+    width: 700px;
+    height: 780px;
+    overflow: hidden;
+    display: inline-block;
+    margin-right: 50px;
+    vertical-align: middle;
+}
+
+.conten h1 {
+    display: inline-block;
+    width: 359px;
+    font-size: 40px;
+    margin: 270px;
+
+}
