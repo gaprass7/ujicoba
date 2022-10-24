@@ -1,0 +1,1446 @@
+<!DOCTYPE html>
+
+<html  dir="ltr" lang="en" xml:lang="en">
+<head>
+    <title>Dashboard</title>
+    <link rel="shortcut icon" href="http://elearning.almaata.ac.id/pluginfile.php/1/theme_edumy/favicon/1657194583/uaa.png" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="moodle, Dashboard" />
+<link rel="stylesheet" type="text/css" href="http://elearning.almaata.ac.id/theme/yui_combo.php?rollup/3.17.2/yui-moodlesimple-min.css" /><script id="firstthemesheet" type="text/css">/** Required in order to fix style inclusion problems in IE with YUI **/</script><link rel="stylesheet" type="text/css" href="http://elearning.almaata.ac.id/theme/styles.php/edumy/1657194583_1/all" />
+<script type="text/javascript">
+//<![CDATA[
+var M = {}; M.yui = {};
+M.pageloadstarttime = new Date();
+M.cfg = {"wwwroot":"http:\/\/elearning.almaata.ac.id","sesskey":"JXoqnJRahi","sessiontimeout":"7200","themerev":"1657194583","slasharguments":1,"theme":"edumy","iconsystemmodule":"core\/icon_system_fontawesome","jsrev":"1626509243","admin":"admin","svgicons":true,"usertimezone":"Asia\/Jakarta","contextid":51008,"langrev":1626509243,"templaterev":"1626509243"};var yui1ConfigFn = function(me) {if(/-skin|reset|fonts|grids|base/.test(me.name)){me.type='css';me.path=me.path.replace(/\.js/,'.css');me.path=me.path.replace(/\/yui2-skin/,'/assets/skins/sam/yui2-skin')}};
+var yui2ConfigFn = function(me) {var parts=me.name.replace(/^moodle-/,'').split('-'),component=parts.shift(),module=parts[0],min='-min';if(/-(skin|core)$/.test(me.name)){parts.pop();me.type='css';min=''}
+if(module){var filename=parts.join('-');me.path=component+'/'+module+'/'+filename+min+'.'+me.type}else{me.path=component+'/'+component+'.'+me.type}};
+YUI_config = {"debug":false,"base":"http:\/\/elearning.almaata.ac.id\/lib\/yuilib\/3.17.2\/","comboBase":"http:\/\/elearning.almaata.ac.id\/theme\/yui_combo.php?","combine":true,"filter":null,"insertBefore":"firstthemesheet","groups":{"yui2":{"base":"http:\/\/elearning.almaata.ac.id\/lib\/yuilib\/2in3\/2.9.0\/build\/","comboBase":"http:\/\/elearning.almaata.ac.id\/theme\/yui_combo.php?","combine":true,"ext":false,"root":"2in3\/2.9.0\/build\/","patterns":{"yui2-":{"group":"yui2","configFn":yui1ConfigFn}}},"moodle":{"name":"moodle","base":"http:\/\/elearning.almaata.ac.id\/theme\/yui_combo.php?m\/1626509243\/","combine":true,"comboBase":"http:\/\/elearning.almaata.ac.id\/theme\/yui_combo.php?","ext":false,"root":"m\/1626509243\/","patterns":{"moodle-":{"group":"moodle","configFn":yui2ConfigFn}},"filter":null,"modules":{"moodle-core-actionmenu":{"requires":["base","event","node-event-simulate"]},"moodle-core-blocks":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification"]},"moodle-core-chooserdialogue":{"requires":["base","panel","moodle-core-notification"]},"moodle-core-dragdrop":{"requires":["base","node","io","dom","dd","event-key","event-focus","moodle-core-notification"]},"moodle-core-event":{"requires":["event-custom"]},"moodle-core-formchangechecker":{"requires":["base","event-focus","moodle-core-event"]},"moodle-core-handlebars":{"condition":{"trigger":"handlebars","when":"after"}},"moodle-core-languninstallconfirm":{"requires":["base","node","moodle-core-notification-confirm","moodle-core-notification-alert"]},"moodle-core-lockscroll":{"requires":["plugin","base-build"]},"moodle-core-maintenancemodetimer":{"requires":["base","node"]},"moodle-core-notification":{"requires":["moodle-core-notification-dialogue","moodle-core-notification-alert","moodle-core-notification-confirm","moodle-core-notification-exception","moodle-core-notification-ajaxexception"]},"moodle-core-notification-dialogue":{"requires":["base","node","panel","escape","event-key","dd-plugin","moodle-core-widget-focusafterclose","moodle-core-lockscroll"]},"moodle-core-notification-alert":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-confirm":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-exception":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-ajaxexception":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-popuphelp":{"requires":["moodle-core-tooltip"]},"moodle-core-tooltip":{"requires":["base","node","io-base","moodle-core-notification-dialogue","json-parse","widget-position","widget-position-align","event-outside","cache-base"]},"moodle-core_availability-form":{"requires":["base","node","event","event-delegate","panel","moodle-core-notification-dialogue","json"]},"moodle-backup-backupselectall":{"requires":["node","event","node-event-simulate","anim"]},"moodle-backup-confirmcancel":{"requires":["node","node-event-simulate","moodle-core-notification-confirm"]},"moodle-course-categoryexpander":{"requires":["node","event-key"]},"moodle-course-dragdrop":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification","moodle-course-coursebase","moodle-course-util"]},"moodle-course-formatchooser":{"requires":["base","node","node-event-simulate"]},"moodle-course-management":{"requires":["base","node","io-base","moodle-core-notification-exception","json-parse","dd-constrain","dd-proxy","dd-drop","dd-delegate","node-event-delegate"]},"moodle-course-modchooser":{"requires":["moodle-core-chooserdialogue","moodle-course-coursebase"]},"moodle-course-util":{"requires":["node"],"use":["moodle-course-util-base"],"submodules":{"moodle-course-util-base":{},"moodle-course-util-section":{"requires":["node","moodle-course-util-base"]},"moodle-course-util-cm":{"requires":["node","moodle-course-util-base"]}}},"moodle-form-dateselector":{"requires":["base","node","overlay","calendar"]},"moodle-form-passwordunmask":{"requires":[]},"moodle-form-shortforms":{"requires":["node","base","selector-css3","moodle-core-event"]},"moodle-question-chooser":{"requires":["moodle-core-chooserdialogue"]},"moodle-question-preview":{"requires":["base","dom","event-delegate","event-key","core_question_engine"]},"moodle-question-searchform":{"requires":["base","node"]},"moodle-availability_completion-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_date-form":{"requires":["base","node","event","io","moodle-core_availability-form"]},"moodle-availability_grade-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_group-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_grouping-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_profile-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-mod_assign-history":{"requires":["node","transition"]},"moodle-mod_bigbluebuttonbn-broker":{"requires":["base","node","datasource-get","datasource-jsonschema","datasource-polling","moodle-core-notification"]},"moodle-mod_bigbluebuttonbn-imports":{"requires":["base","node"]},"moodle-mod_bigbluebuttonbn-modform":{"requires":["base","node"]},"moodle-mod_bigbluebuttonbn-recordings":{"requires":["base","node","datasource-get","datasource-jsonschema","datasource-polling","moodle-core-notification"]},"moodle-mod_bigbluebuttonbn-rooms":{"requires":["base","node","datasource-get","datasource-jsonschema","datasource-polling","moodle-core-notification"]},"moodle-mod_quiz-autosave":{"requires":["base","node","event","event-valuechange","node-event-delegate","io-form"]},"moodle-mod_quiz-dragdrop":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification","moodle-mod_quiz-quizbase","moodle-mod_quiz-util-base","moodle-mod_quiz-util-page","moodle-mod_quiz-util-slot","moodle-course-util"]},"moodle-mod_quiz-modform":{"requires":["base","node","event"]},"moodle-mod_quiz-questionchooser":{"requires":["moodle-core-chooserdialogue","moodle-mod_quiz-util","querystring-parse"]},"moodle-mod_quiz-quizbase":{"requires":["base","node"]},"moodle-mod_quiz-toolboxes":{"requires":["base","node","event","event-key","io","moodle-mod_quiz-quizbase","moodle-mod_quiz-util-slot","moodle-core-notification-ajaxexception"]},"moodle-mod_quiz-util":{"requires":["node","moodle-core-actionmenu"],"use":["moodle-mod_quiz-util-base"],"submodules":{"moodle-mod_quiz-util-base":{},"moodle-mod_quiz-util-slot":{"requires":["node","moodle-mod_quiz-util-base"]},"moodle-mod_quiz-util-page":{"requires":["node","moodle-mod_quiz-util-base"]}}},"moodle-message_airnotifier-toolboxes":{"requires":["base","node","io"]},"moodle-filter_glossary-autolinker":{"requires":["base","node","io-base","json-parse","event-delegate","overlay","moodle-core-event","moodle-core-notification-alert","moodle-core-notification-exception","moodle-core-notification-ajaxexception"]},"moodle-filter_mathjaxloader-loader":{"requires":["moodle-core-event"]},"moodle-editor_atto-editor":{"requires":["node","transition","io","overlay","escape","event","event-simulate","event-custom","node-event-html5","node-event-simulate","yui-throttle","moodle-core-notification-dialogue","moodle-core-notification-confirm","moodle-editor_atto-rangy","handlebars","timers","querystring-stringify"]},"moodle-editor_atto-plugin":{"requires":["node","base","escape","event","event-outside","handlebars","event-custom","timers","moodle-editor_atto-menu"]},"moodle-editor_atto-menu":{"requires":["moodle-core-notification-dialogue","node","event","event-custom"]},"moodle-editor_atto-rangy":{"requires":[]},"moodle-report_eventlist-eventfilter":{"requires":["base","event","node","node-event-delegate","datatable","autocomplete","autocomplete-filters"]},"moodle-report_loglive-fetchlogs":{"requires":["base","event","node","io","node-event-delegate"]},"moodle-report_overviewstats-charts":{"requires":["base","node","charts","charts-legend"]},"moodle-gradereport_grader-gradereporttable":{"requires":["base","node","event","handlebars","overlay","event-hover"]},"moodle-gradereport_history-userselector":{"requires":["escape","event-delegate","event-key","handlebars","io-base","json-parse","moodle-core-notification-dialogue"]},"moodle-tool_capability-search":{"requires":["base","node"]},"moodle-tool_lp-dragdrop-reorder":{"requires":["moodle-core-dragdrop"]},"moodle-tool_monitor-dropdown":{"requires":["base","event","node"]},"moodle-assignfeedback_editpdf-editor":{"requires":["base","event","node","io","graphics","json","event-move","event-resize","transition","querystring-stringify-simple","moodle-core-notification-dialog","moodle-core-notification-alert","moodle-core-notification-warning","moodle-core-notification-exception","moodle-core-notification-ajaxexception"]},"moodle-atto_accessibilitychecker-button":{"requires":["color-base","moodle-editor_atto-plugin"]},"moodle-atto_accessibilityhelper-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_align-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_bold-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_charmap-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_clear-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_collapse-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_emojipicker-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_emoticon-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_equation-button":{"requires":["moodle-editor_atto-plugin","moodle-core-event","io","event-valuechange","tabview","array-extras"]},"moodle-atto_h5p-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_html-beautify":{},"moodle-atto_html-button":{"requires":["promise","moodle-editor_atto-plugin","moodle-atto_html-beautify","moodle-atto_html-codemirror","event-valuechange"]},"moodle-atto_html-codemirror":{"requires":["moodle-atto_html-codemirror-skin"]},"moodle-atto_image-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_indent-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_italic-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_link-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_managefiles-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_managefiles-usedfiles":{"requires":["node","escape"]},"moodle-atto_media-button":{"requires":["moodle-editor_atto-plugin","moodle-form-shortforms"]},"moodle-atto_noautolink-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_orderedlist-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_recordrtc-button":{"requires":["moodle-editor_atto-plugin","moodle-atto_recordrtc-recording"]},"moodle-atto_recordrtc-recording":{"requires":["moodle-atto_recordrtc-button"]},"moodle-atto_rtl-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_strike-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_subscript-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_superscript-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_table-button":{"requires":["moodle-editor_atto-plugin","moodle-editor_atto-menu","event","event-valuechange"]},"moodle-atto_title-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_underline-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_undo-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_unorderedlist-button":{"requires":["moodle-editor_atto-plugin"]}}},"gallery":{"name":"gallery","base":"http:\/\/elearning.almaata.ac.id\/lib\/yuilib\/gallery\/","combine":true,"comboBase":"http:\/\/elearning.almaata.ac.id\/theme\/yui_combo.php?","ext":false,"root":"gallery\/1626509243\/","patterns":{"gallery-":{"group":"gallery"}}}},"modules":{"core_filepicker":{"name":"core_filepicker","fullpath":"http:\/\/elearning.almaata.ac.id\/lib\/javascript.php\/1626509243\/repository\/filepicker.js","requires":["base","node","node-event-simulate","json","async-queue","io-base","io-upload-iframe","io-form","yui2-treeview","panel","cookie","datatable","datatable-sort","resize-plugin","dd-plugin","escape","moodle-core_filepicker","moodle-core-notification-dialogue"]},"core_comment":{"name":"core_comment","fullpath":"http:\/\/elearning.almaata.ac.id\/lib\/javascript.php\/1626509243\/comment\/comment.js","requires":["base","io-base","node","json","yui2-animation","overlay","escape"]},"mathjax":{"name":"mathjax","fullpath":"https:\/\/cdnjs.cloudflare.com\/ajax\/libs\/mathjax\/2.7.2\/MathJax.js?delayStartupUntil=configured"}}};
+M.yui.loader = {modules: {}};
+
+//]]>
+</script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+</head>
+
+<body  id="page-my-index" class="format-site  path-my chrome dir-ltr lang-en yui-skin-sam yui3-skin-sam elearning-almaata-ac-id pagelayout-mydashboard course-1 context-51008 ccn_no_hero ccn_header_style_6 ccn_footer_style_1 ccn_blog_style_1 ccn_course_list_style_1 ccn_breadcrumb_style_0 role-standard ccn-not-front ccn_header_applies-all  ccn_dashboard_header_sticky  ccn_dashboard_header_gradient   ccn_course_single_v1     ccnUA ccn_context_dashboard">
+    <div class="preloader
+       ccn_preloader_load 
+      
+      
+      
+      
+      
+    "></div>
+  <div class="wrapper">
+    
+    <header class="header-nav menu_style_home_one dashbord_pages navbar-scrolltofixed stricky main-menu ">
+      <div class="container-fluid">
+        <nav>
+          <div class="menu-toggle">
+            <img class="nav_logo_img img-fluid" src="http://elearning.almaata.ac.id/pluginfile.php/1/theme_edumy/headerlogo1/1657194583/Logo-UAA-baru.png" alt="UAA LESSON">
+            <button type="button" id="menu-btn">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          </div>
+            <a href="http://elearning.almaata.ac.id" class="navbar_brand float-left dn-smd">
+                <img class="logo1 img-fluid" src="http://elearning.almaata.ac.id/pluginfile.php/1/theme_edumy/headerlogo1/1657194583/Logo-UAA-baru.png" alt="UAA LESSON" >
+                <img class="logo2 img-fluid" src="http://elearning.almaata.ac.id/pluginfile.php/1/theme_edumy/headerlogo1/1657194583/Logo-UAA-baru.png" alt="UAA LESSON" >
+              
+            </a>
+          <ul id="respMenu" class="ace-responsive-menu" data-menu-style="horizontal">
+            <li class=""><a class="" title="Home" href="http://elearning.almaata.ac.id/?redirect=0">Home</a></li><li><a class="ccn-menu-item" title="Fakultas" href="#">Fakultas</a><ul><li class=""><a class="" title="Ilmu Ilmu Kesehatan" href="http://elearning.almaata.ac.id/course/index.php?categoryid=2">Ilmu Ilmu Kesehatan</a></li><li class=""><a class="" title="Ilmu Tarbiyah dan Keguruan" href="http://elearning.almaata.ac.id/course/index.php?categoryid=4">Ilmu Tarbiyah dan Keguruan</a></li><li class=""><a class="" title="Ekonomi dan Bisnis" href="http://elearning.almaata.ac.id/course/index.php?categoryid=5">Ekonomi dan Bisnis</a></li><li class=""><a class="" title="Komputer dan Teknik" href="http://elearning.almaata.ac.id/course/index.php?categoryid=6">Komputer dan Teknik</a></li></ul></li><li class=""><a class="" title="UJIAN" href="http://elearning.almaata.ac.id/course/index.php?categoryid=132">UJIAN</a></li><li class=""><a class="" title="PMB" href="http://pmb.almaata.ac.id/">PMB</a></li><li class=""><a class="" title="PORTAL" href="http://portal.almaata.ac.id/">PORTAL</a></li><li><a class="ccn-menu-item" title="Perpustakaan" href="https://lib.almaata.ac.id/">Perpustakaan</a><ul><li class=""><a class="" title="E-Resources" href="https://e-resources.perpusnas.go.id/">E-Resources</a></li><li class=""><a class="" title="Repository" href="http://elibrary.almaata.ac.id/">Repository</a></li><li class=""><a class="" title="Journal UAA" href="https://ejournal.almaata.ac.id/">Journal UAA</a></li><li class=""><a class="" title="GARUDA" href="https://garuda.ristekbrin.go.id/">GARUDA</a></li><li class=""><a class="" title="RAMA" href="https://rama.ristekbrin.go.id/">RAMA</a></li><li class=""><a class="" title="SINTA" href="https://sinta.ristekbrin.go.id/journals">SINTA</a></li></ul></li><li><a class="ccn-menu-item" title="Language" href="#">English ‎(en)‎</a><ul><li class=""><a class="" title="English ‎(en)‎" href="http://elearning.almaata.ac.id/my/index.php?lang=en">English ‎(en)‎</a></li><li class=""><a class="" title="Indonesian ‎(id)‎" href="http://elearning.almaata.ac.id/my/index.php?lang=id">Indonesian ‎(id)‎</a></li></ul></li>
+          </ul>
+            <ul class="header_user_notif ccn-frontend-header_user_notif pull-right dn-smd">
+                <li class="user_setting ccn-settings-nav ccn-settings-nav-darkMode">
+                  <div class="dropdown">
+                    <a class="notification_icon" id="ccnToggleDarkMode"><span class="ccn-flaticon-hide"></span></a>
+                  </div>
+                </li>
+              <li class="user_notif ccn-settings-nav ccn-settings-nav-notif">
+  <div class="dropdown">
+    <div class="popover-region collapsed popover-region-notifications" id="nav-notification-popover-container" data-userid="3577" data-region="popover-region">
+      <div class="popover-region-toggle nav-link" data-region="popover-region-toggle" role="button" aria-controls="popover-region-container-634690d174f34634690d1528159" aria-haspopup="true" aria-label="Show notification window with no new notifications"
+        tabindex="0">
+        <div class="notification_icon">        <i class="icon fa fa-bell fa-fw "  title="Toggle notifications menu" aria-label="Toggle notifications menu"></i>
+        <div class="count-container hidden" data-region="count-container"
+        aria-label="There are 0 unread notifications">0</div>
+</div>
+      </div>
+      <div  id="popover-region-container-634690d174f34634690d1528159" class="popover-region-container" data-region="popover-region-container" aria-expanded="false" aria-hidden="true"
+        aria-label="Notification window" role="region">
+        <div class="--popover-region-header-container so_heading">
+          <p class="--popover-region-header-text" data-region="popover-region-header-text">Notifications</p>
+          <div class="popover-region-header-actions" data-region="popover-region-header-actions">        <a class="mark-all-read-button"
+           href="#"
+           title="Mark all as read"
+           data-action="mark-all-read"
+           role="button">
+            <span class="normal-icon"><i class="icon fa fa-check fa-fw "  title="Mark all as read" aria-label="Mark all as read"></i></span>
+            <span class="loading-icon icon-no-margin"><i class="icon fa fa-circle-o-notch fa-spin fa-fw "  title="Loading" aria-label="Loading"></i></span>
+        </a>
+        <a href="http://elearning.almaata.ac.id/message/notificationpreferences.php?userid=3577"
+           title="Notification preferences">
+            <i class="icon fa fa-cog fa-fw "  title="Notification preferences" aria-label="Notification preferences"></i>
+        </a>
+</div>
+        </div>
+        <div class="popover-region-content-container" data-region="popover-region-content-container">
+          <div class="popover-region-content" data-region="popover-region-content">
+                    <div class="all-notifications"
+            data-region="all-notifications"
+            role="log"
+            aria-busy="false"
+            aria-atomic="false"
+            aria-relevant="additions"></div>
+        <div class="empty-message" tabindex="0" data-region="empty-message">You have no notifications</div>
+
+          </div>
+          <span class="loading-icon icon-no-margin"><i class="icon fa fa-circle-o-notch fa-spin fa-fw "  title="Loading" aria-label="Loading"></i></span>
+        </div>
+          <a class="see-all-link view_all_noti text-thm" href="http://elearning.almaata.ac.id/message/output/popup/notifications.php">
+            <div class="ccn--popover-region-footer-container">
+              <div class="popover-region-seeall-text">See all</div>
+            </div>
+          </a>
+      </div>
+    </div>
+  </div>
+</li>
+                <li class="user_setting ccn-settings-nav">
+                  <div class="dropdown">
+                    <a class="notification_icon" href="#" data-toggle="dropdown"><span class="flaticon-settings"></span></a>
+                    <div class="dropdown-menu notification_dropdown_content">
+                      <div class="so_heading">
+                        <p>Navigation</p>
+                      </div>
+                      <div class="user_setting_content">
+                        <div class="so_content" data-simplebar="init">
+                          <nav class="list-group" aria-label="Site">
+                              <a class=" active" href="http://elearning.almaata.ac.id/my/" data-key="myhome" data-isexpandable="0" data-indent="0" data-showdivider="0" data-type="1" data-nodetype="1"
+                                data-collapse="0" data-forceopen="1" data-isactive="1" data-hidden="0" data-preceedwithhr="0" >
+                          
+                                  <i class="icon fa fa-tachometer fa-fw " aria-hidden="true"  ></i>
+                                Dashboard
+                          
+                              </a>
+                              <a class=" " href="http://elearning.almaata.ac.id/?redirect=0" data-key="home" data-isexpandable="0" data-indent="0" data-showdivider="0" data-type="70" data-nodetype="0"
+                                data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="myhome" >
+                          
+                                  <i class="icon fa fa-home fa-fw " aria-hidden="true"  ></i>
+                                Site home
+                          
+                              </a>
+                              <a class=" " href="http://elearning.almaata.ac.id/calendar/view.php?view=month" data-key="calendar" data-isexpandable="0" data-indent="0" data-showdivider="0" data-type="60" data-nodetype="0"
+                                data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="1" >
+                          
+                                  <i class="icon fa fa-calendar fa-fw " aria-hidden="true"  ></i>
+                                Calendar
+                          
+                              </a>
+                              <a class=" " href="http://elearning.almaata.ac.id/user/files.php" data-key="privatefiles" data-isexpandable="0" data-indent="0" data-showdivider="0" data-type="70" data-nodetype="0"
+                                data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="1" >
+                          
+                                  <i class="icon fa fa-file-o fa-fw " aria-hidden="true"  ></i>
+                                Private files
+                          
+                              </a>
+                              <div class="no-action" data-key="mycourses" data-isexpandable="1" data-indent="0" data-showdivider="0" data-type="0" data-nodetype="1" data-collapse="0"
+                                data-forceopen="1" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="myhome" >
+                          
+                          
+                                  <i class="icon fa fa-graduation-cap fa-fw " aria-hidden="true"  ></i>
+                                My courses
+                          
+                              </div>
+                              <a class=" " href="http://elearning.almaata.ac.id/course/view.php?id=8566" data-key="8566" data-isexpandable="1" data-indent="1" data-showdivider="0" data-type="20" data-nodetype="1"
+                                data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="mycourses" >
+                          
+                                  <i class="icon fa fa-graduation-cap fa-fw " aria-hidden="true"  ></i>
+                                SI036-01-20221_SI036-Analisis dan Perancangan Sistem Informasi kelas 01
+                          
+                              </a>
+                              <a class=" " href="http://elearning.almaata.ac.id/course/view.php?id=8564" data-key="8564" data-isexpandable="1" data-indent="1" data-showdivider="0" data-type="20" data-nodetype="1"
+                                data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="mycourses" >
+                          
+                                  <i class="icon fa fa-graduation-cap fa-fw " aria-hidden="true"  ></i>
+                                SI034-01-20221_SI034-Statistika untuk Bisnis kelas 01
+                          
+                              </a>
+                              <a class=" " href="http://elearning.almaata.ac.id/course/view.php?id=8558" data-key="8558" data-isexpandable="1" data-indent="1" data-showdivider="0" data-type="20" data-nodetype="1"
+                                data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="mycourses" >
+                          
+                                  <i class="icon fa fa-graduation-cap fa-fw " aria-hidden="true"  ></i>
+                                SI024-01-20221_SI024-Teknologi Internet dan Mobile kelas 01 dan kelas 02
+                          
+                              </a>
+                              <a class=" " href="http://elearning.almaata.ac.id/course/view.php?id=8557" data-key="8557" data-isexpandable="1" data-indent="1" data-showdivider="0" data-type="20" data-nodetype="1"
+                                data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="mycourses" >
+                          
+                                  <i class="icon fa fa-graduation-cap fa-fw " aria-hidden="true"  ></i>
+                                SI017-02-20221_SI017-Metodologi Penelitian kelas 02
+                          
+                              </a>
+                              <a class=" " href="http://elearning.almaata.ac.id/course/view.php?id=8555" data-key="8555" data-isexpandable="1" data-indent="1" data-showdivider="0" data-type="20" data-nodetype="1"
+                                data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="mycourses" >
+                          
+                                  <i class="icon fa fa-graduation-cap fa-fw " aria-hidden="true"  ></i>
+                                SI016-02-20221_SI016-Arsitektur Enterprise kelas 02
+                          
+                              </a>
+                              <a class=" " href="http://elearning.almaata.ac.id/course/view.php?id=8552" data-key="8552" data-isexpandable="1" data-indent="1" data-showdivider="0" data-type="20" data-nodetype="1"
+                                data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="mycourses" >
+                          
+                                  <i class="icon fa fa-graduation-cap fa-fw " aria-hidden="true"  ></i>
+                                SI015-01-20221_SI015-Implementasi dan Pengujian Sistem kelas 01
+                          
+                              </a>
+                          </nav>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              <li class="user_setting">
+                <div class="dropdown">
+                  <a class="btn dropdown-toggle ccn-profile-menu" href="#" data-toggle="dropdown" aria-expanded="false"><img class="rounded-circle" src="http://elearning.almaata.ac.id/user/pix.php/3577/f1.jpg" alt="203100085"></a>
+                  <div class="dropdown-menu" x-placement="top-start" style="position: absolute; transform: translate3d(-9px, -5px, 0px); top: 0px; left: 0px; will-change: transform;">
+                    <div class="user_set_header">
+                      <img class="float-left rounded-circle" src="http://elearning.almaata.ac.id/user/pix.php/3577/f1.jpg" alt="203100085">
+                      <p>203100085 <br><span class="address">203100085@almaata.ac.id</span></p>
+                    </div>
+                    <div class="user_setting_content">
+                      <a class="dropdown-item" href="http://elearning.almaata.ac.id/my/">Dashboard</a><a class="dropdown-item" href="http://elearning.almaata.ac.id/user/profile.php?id=3577">Profile</a><a class="dropdown-item" href="http://elearning.almaata.ac.id/grade/report/overview/index.php">Grades</a><a class="dropdown-item" href="http://elearning.almaata.ac.id/message/index.php">Messages</a><a class="dropdown-item" href="http://elearning.almaata.ac.id/user/preferences.php">Preferences</a><a class="dropdown-item" href="http://elearning.almaata.ac.id/login/logout.php?sesskey=JXoqnJRahi">Log out</a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+        </nav>
+      </div>
+    </header>
+    <div id="page" class="stylehome1 h0">
+      <div class="mobile-menu">
+        <div class="header stylehome1 dashbord_mobile_logo dashbord_pages">
+          <div class="main_logo_home2">
+            <a href="http://elearning.almaata.ac.id" class="mobileBrand">
+                  <img class="nav_logo_img img-fluid float-left mt20" src="http://elearning.almaata.ac.id/pluginfile.php/1/theme_edumy/headerlogo_mobile/1657194583/Logo-UAA-baru.png" alt="UAA LESSON" >
+              
+            </a>
+          </div>
+          <ul class="menu_bar_home2">
+            <li class="list-inline-item"></li>
+            <li class="list-inline-item"><a href="#menu"><span></span></a></li>
+          </ul>
+        </div>
+      </div><!-- /.mobile-menu -->
+      <nav id="menu" class="stylehome1">
+        <ul>
+          <li class=""><a class="" title="Home" href="http://elearning.almaata.ac.id/?redirect=0">Home</a></li><li><a class="ccn-menu-item" title="Fakultas" href="#">Fakultas</a><ul><li class=""><a class="" title="Ilmu Ilmu Kesehatan" href="http://elearning.almaata.ac.id/course/index.php?categoryid=2">Ilmu Ilmu Kesehatan</a></li><li class=""><a class="" title="Ilmu Tarbiyah dan Keguruan" href="http://elearning.almaata.ac.id/course/index.php?categoryid=4">Ilmu Tarbiyah dan Keguruan</a></li><li class=""><a class="" title="Ekonomi dan Bisnis" href="http://elearning.almaata.ac.id/course/index.php?categoryid=5">Ekonomi dan Bisnis</a></li><li class=""><a class="" title="Komputer dan Teknik" href="http://elearning.almaata.ac.id/course/index.php?categoryid=6">Komputer dan Teknik</a></li></ul></li><li class=""><a class="" title="UJIAN" href="http://elearning.almaata.ac.id/course/index.php?categoryid=132">UJIAN</a></li><li class=""><a class="" title="PMB" href="http://pmb.almaata.ac.id/">PMB</a></li><li class=""><a class="" title="PORTAL" href="http://portal.almaata.ac.id/">PORTAL</a></li><li><a class="ccn-menu-item" title="Perpustakaan" href="https://lib.almaata.ac.id/">Perpustakaan</a><ul><li class=""><a class="" title="E-Resources" href="https://e-resources.perpusnas.go.id/">E-Resources</a></li><li class=""><a class="" title="Repository" href="http://elibrary.almaata.ac.id/">Repository</a></li><li class=""><a class="" title="Journal UAA" href="https://ejournal.almaata.ac.id/">Journal UAA</a></li><li class=""><a class="" title="GARUDA" href="https://garuda.ristekbrin.go.id/">GARUDA</a></li><li class=""><a class="" title="RAMA" href="https://rama.ristekbrin.go.id/">RAMA</a></li><li class=""><a class="" title="SINTA" href="https://sinta.ristekbrin.go.id/journals">SINTA</a></li></ul></li><li><a class="ccn-menu-item" title="Language" href="#">English ‎(en)‎</a><ul><li class=""><a class="" title="English ‎(en)‎" href="http://elearning.almaata.ac.id/my/index.php?lang=en">English ‎(en)‎</a></li><li class=""><a class="" title="Indonesian ‎(id)‎" href="http://elearning.almaata.ac.id/my/index.php?lang=id">Indonesian ‎(id)‎</a></li></ul></li>
+            <li>
+              <a href="#">Navigation</a>
+              <ul><nav class="list-group" aria-label="Site">
+    <a class=" active" href="http://elearning.almaata.ac.id/my/" data-key="myhome" data-isexpandable="0" data-indent="0" data-showdivider="0" data-type="1" data-nodetype="1"
+      data-collapse="0" data-forceopen="1" data-isactive="1" data-hidden="0" data-preceedwithhr="0" >
+
+        <i class="icon fa fa-tachometer fa-fw " aria-hidden="true"  ></i>
+      Dashboard
+
+    </a>
+    <a class=" " href="http://elearning.almaata.ac.id/?redirect=0" data-key="home" data-isexpandable="0" data-indent="0" data-showdivider="0" data-type="70" data-nodetype="0"
+      data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="myhome" >
+
+        <i class="icon fa fa-home fa-fw " aria-hidden="true"  ></i>
+      Site home
+
+    </a>
+    <a class=" " href="http://elearning.almaata.ac.id/calendar/view.php?view=month" data-key="calendar" data-isexpandable="0" data-indent="0" data-showdivider="0" data-type="60" data-nodetype="0"
+      data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="1" >
+
+        <i class="icon fa fa-calendar fa-fw " aria-hidden="true"  ></i>
+      Calendar
+
+    </a>
+    <a class=" " href="http://elearning.almaata.ac.id/user/files.php" data-key="privatefiles" data-isexpandable="0" data-indent="0" data-showdivider="0" data-type="70" data-nodetype="0"
+      data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="1" >
+
+        <i class="icon fa fa-file-o fa-fw " aria-hidden="true"  ></i>
+      Private files
+
+    </a>
+    <div class="no-action" data-key="mycourses" data-isexpandable="1" data-indent="0" data-showdivider="0" data-type="0" data-nodetype="1" data-collapse="0"
+      data-forceopen="1" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="myhome" >
+
+
+        <i class="icon fa fa-graduation-cap fa-fw " aria-hidden="true"  ></i>
+      My courses
+
+    </div>
+    <a class=" " href="http://elearning.almaata.ac.id/course/view.php?id=8566" data-key="8566" data-isexpandable="1" data-indent="1" data-showdivider="0" data-type="20" data-nodetype="1"
+      data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="mycourses" >
+
+        <i class="icon fa fa-graduation-cap fa-fw " aria-hidden="true"  ></i>
+      SI036-01-20221_SI036-Analisis dan Perancangan Sistem Informasi kelas 01
+
+    </a>
+    <a class=" " href="http://elearning.almaata.ac.id/course/view.php?id=8564" data-key="8564" data-isexpandable="1" data-indent="1" data-showdivider="0" data-type="20" data-nodetype="1"
+      data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="mycourses" >
+
+        <i class="icon fa fa-graduation-cap fa-fw " aria-hidden="true"  ></i>
+      SI034-01-20221_SI034-Statistika untuk Bisnis kelas 01
+
+    </a>
+    <a class=" " href="http://elearning.almaata.ac.id/course/view.php?id=8558" data-key="8558" data-isexpandable="1" data-indent="1" data-showdivider="0" data-type="20" data-nodetype="1"
+      data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="mycourses" >
+
+        <i class="icon fa fa-graduation-cap fa-fw " aria-hidden="true"  ></i>
+      SI024-01-20221_SI024-Teknologi Internet dan Mobile kelas 01 dan kelas 02
+
+    </a>
+    <a class=" " href="http://elearning.almaata.ac.id/course/view.php?id=8557" data-key="8557" data-isexpandable="1" data-indent="1" data-showdivider="0" data-type="20" data-nodetype="1"
+      data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="mycourses" >
+
+        <i class="icon fa fa-graduation-cap fa-fw " aria-hidden="true"  ></i>
+      SI017-02-20221_SI017-Metodologi Penelitian kelas 02
+
+    </a>
+    <a class=" " href="http://elearning.almaata.ac.id/course/view.php?id=8555" data-key="8555" data-isexpandable="1" data-indent="1" data-showdivider="0" data-type="20" data-nodetype="1"
+      data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="mycourses" >
+
+        <i class="icon fa fa-graduation-cap fa-fw " aria-hidden="true"  ></i>
+      SI016-02-20221_SI016-Arsitektur Enterprise kelas 02
+
+    </a>
+    <a class=" " href="http://elearning.almaata.ac.id/course/view.php?id=8552" data-key="8552" data-isexpandable="1" data-indent="1" data-showdivider="0" data-type="20" data-nodetype="1"
+      data-collapse="0" data-forceopen="0" data-isactive="0" data-hidden="0" data-preceedwithhr="0" data-parent-key="mycourses" >
+
+        <i class="icon fa fa-graduation-cap fa-fw " aria-hidden="true"  ></i>
+      SI015-01-20221_SI015-Implementasi dan Pengujian Sistem kelas 01
+
+    </a>
+</nav>
+</ul>
+            </li>
+            <li>
+              <a href="#">203100085 <img class="rounded-circle" src="http://elearning.almaata.ac.id/user/pix.php/3577/f1.jpg" alt="203100085"></a>
+              <ul><a class="dropdown-item" href="http://elearning.almaata.ac.id/my/">Dashboard</a><a class="dropdown-item" href="http://elearning.almaata.ac.id/user/profile.php?id=3577">Profile</a><a class="dropdown-item" href="http://elearning.almaata.ac.id/grade/report/overview/index.php">Grades</a><a class="dropdown-item" href="http://elearning.almaata.ac.id/message/index.php">Messages</a><a class="dropdown-item" href="http://elearning.almaata.ac.id/user/preferences.php">Preferences</a><a class="dropdown-item" href="http://elearning.almaata.ac.id/login/logout.php?sesskey=JXoqnJRahi">Log out</a></ul>
+            </li>
+        </ul>
+      </nav>
+    </div>
+      <section class="dashboard_sidebar dn-1199 ">
+        <div class="dashboard_sidebars">
+          <div class="user_board">
+              <div class="user_profile">
+                <div class="media">
+                  <div class="media-body">
+                    <h4 class="mt-0">Start</h4>
+                  </div>
+                </div>
+              </div>
+              <div class="dashbord_nav_list">
+                <a class="dropdown-item" href="http://elearning.almaata.ac.id/my/">Dashboard</a><a class="dropdown-item" href="http://elearning.almaata.ac.id/user/profile.php?id=3577">Profile</a><a class="dropdown-item" href="http://elearning.almaata.ac.id/grade/report/overview/index.php">Grades</a><a class="dropdown-item" href="http://elearning.almaata.ac.id/message/index.php">Messages</a><a class="dropdown-item" href="http://elearning.almaata.ac.id/user/preferences.php">Preferences</a><a class="dropdown-item" href="http://elearning.almaata.ac.id/login/logout.php?sesskey=JXoqnJRahi">Log out</a>
+              </div>
+            <div class="pl30 pr30">
+              <aside id="block-region-left" class="block-region" data-blockregion="left" data-droptarget="1"></aside>
+            </div>
+          </div>
+        </div>
+      </section>
+    <div class="our-dashbord dashbord ">
+      <div class="dashboard_main_content">
+        <div class="container-fluid">
+          <div class="main_content_container">
+            <div class="row">
+              <div class="col-xl-12">
+                <div class="row">
+                  <div class="col-lg-12">
+                    <nav class="breadcrumb_widgets ccn-clip-l" aria-label="breadcrumb mb30">
+                      <h4 class="title float-left">MUHAMMAD GANANG PRASETYA SISTEM INFORMASI 2020</h4>
+                      <ol class="breadcrumb float-right">
+                        <ol class="breadcrumb">
+      <li class="breadcrumb-item">
+        <a href="http://elearning.almaata.ac.id/my/" aria-current="page"  >Dashboard</a>
+      </li>
+</ol>
+                      </ol>
+                    </nav>
+                  </div>
+                </div>
+                    <div class="row">
+                        <div class="col-sm-6 col-md-6 col-lg-6 col-xl-3">
+                          <a href="http://elearning.almaata.ac.id/message/index.php" class="ff_one">
+                            <div class="detais">
+                              <p>Communicate</p>
+                              Messages
+                            </div>
+                            <div class="ff_icon"><span class="flaticon-speech-bubble"></span></div>
+                          </a>
+                        </div>
+                        <div class="col-sm-6 col-md-6 col-lg-6 col-xl-3">
+                          <a href="http://elearning.almaata.ac.id/user/profile.php?id=3577" class="ff_one style2">
+                            <div class="detais">
+                              <p>Your Profile</p>
+                              Profile
+                            </div>
+                            <div class="ff_icon"><span class="flaticon-cap"></span></div>
+                          </a>
+                        </div>
+                        <div class="col-sm-6 col-md-6 col-lg-6 col-xl-3">
+                          <a href="http://elearning.almaata.ac.id/user/preferences.php" class="ff_one style3">
+                            <div class="detais">
+                              <p>Preferences</p>
+                              Settings
+                            </div>
+                            <div class="ff_icon"><span class="flaticon-settings"></span></div>
+                          </a>
+                        </div>
+                        <div class="col-sm-6 col-md-6 col-lg-6 col-xl-3">
+                          <a href="http://elearning.almaata.ac.id/grade/report/overview/index.php" class="ff_one style4">
+                            <div class="detais">
+                              <p>Performance</p>
+                              Grades
+                            </div>
+                            <div class="ff_icon"><span class="flaticon-rating"></span></div>
+                          </a>
+                        </div>
+                    </div>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                      <aside id="block-region-fullwidth-top" class="block-region" data-blockregion="fullwidth-top" data-droptarget="1"></aside>
+                    </div>
+                    <div class="col-lg-8 col-xl-8 ">
+                  <div>
+    <a class="sr-only sr-only-focusable" href="#maincontent">Skip to main content</a>
+</div><script type="text/javascript" src="http://elearning.almaata.ac.id/lib/javascript.php/1626509243/lib/babel-polyfill/polyfill.min.js"></script>
+<script type="text/javascript" src="http://elearning.almaata.ac.id/lib/javascript.php/1626509243/lib/mdn-polyfills/polyfill.js"></script>
+<script type="text/javascript" src="http://elearning.almaata.ac.id/theme/yui_combo.php?rollup/3.17.2/yui-moodlesimple-min.js"></script><script type="text/javascript" src="http://elearning.almaata.ac.id/theme/jquery.php/core/jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src="http://elearning.almaata.ac.id/lib/javascript.php/1626509243/lib/javascript-static.js"></script>
+<script type="text/javascript" src="http://elearning.almaata.ac.id/theme/javascript.php/edumy/1657194583/head"></script>
+<script type="text/javascript">
+//<![CDATA[
+document.body.className += ' jsenabled';
+//]]>
+</script>
+
+
+                  <div class="container ccn_breadcrumb_widgets clearfix">
+    <div id="page-heading-button">
+      <div class="singlebutton">
+    <form method="post" action="http://elearning.almaata.ac.id/my/index.php" >
+            <input type="hidden" name="edit" value="1">
+            <input type="hidden" name="sesskey" value="JXoqnJRahi">
+        <button type="submit" class="btn btn-secondary"
+            id="single_button634690d1528151"
+            title=""
+            
+            >Customise this page</button>
+    </form>
+</div>
+    </div>
+</div>
+
+                  
+                    <aside id="block-region-above-content" class="block-region" data-blockregion="above-content" data-droptarget="1"></aside>
+                  <span class="notifications" id="user-notifications"></span>
+                  <span id="maincontent"></span><aside id="block-region-content" class="block-region" data-blockregion="content" data-droptarget="1"><div
+  id="inst23920"
+  class="
+    block_myoverview block
+    
+    
+    "
+  style=""
+  role="complementary"
+  data-block="myoverview"
+     >
+
+    <a href="#sb-3" class="sr-only sr-only-focusable">Skip Course overview</a>
+
+
+
+  <div class="ccnBlockContent ">
+    <div id="block-myoverview-634690d16e781634690d1528155" class="my_course_content_container block-myoverview block-cards" data-region="myoverview" role="navigation">
+  <div class="my_course_content mb30">
+    <div class="my_course_content_header">
+      <div class="col-xl-4">
+        <div class="instructor_search_result style2">
+          <h4 class="mt10">Courses</h4>
+        </div>
+      </div>
+      <div class="col-xl-8">
+        <div class="candidate_revew_select style2 text-right" data-region="filter" aria-label="Course overview controls">
+          <ul class="mb0">
+            <li class="list-inline-item">
+              <div class="dropdown bootstrap-select show-tick dropup w-auto">
+                <button id="groupingdropdown" type="button" class="btn btn-outline-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" aria-label="Grouping drop-down menu">
+                  <span class="d-sm-inline-block" data-active-item-text>
+                    
+                    In progress
+                    
+                    
+                    
+                    
+                  </span>
+                </button>
+                <ul class="dropdown-menu" data-show-active-item data-active-item-text aria-labelledby="groupingdropdown">
+                  <li>
+                    <a class="dropdown-item " href="#" data-filter="grouping" data-value="all" data-pref="all" aria-label="All (except hidden)" aria-controls="courses-view-634690d16e781634690d1528155">
+                      All (except hidden)
+                    </a>
+                  </li>
+                  <li class="dropdown-divider" role="presentation">
+                    <span class="filler">&nbsp;</span>
+                  </li>
+                  <li>
+                    <a class="dropdown-item active" href="#" data-filter="grouping" data-value="inprogress" data-pref="inprogress" aria-label="Show courses in progress"
+                      aria-controls="courses-view-634690d16e781634690d1528155">
+                      In progress
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item " href="#" data-filter="grouping" data-value="future" data-pref="future" aria-label="Show future courses" aria-controls="courses-view-634690d16e781634690d1528155">
+                      Future
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item " href="#" data-filter="grouping" data-value="past" data-pref="past" aria-label="Show past courses" aria-controls="courses-view-634690d16e781634690d1528155">
+                      Past
+                    </a>
+                  </li>
+                  <li class="dropdown-divider" role="presentation">
+                    <span class="filler">&nbsp;</span>
+                  </li>
+                  <li>
+                    <a class="dropdown-item " href="#" data-filter="grouping" data-value="favourites" data-pref="favourites" aria-label="Show starred courses"
+                      aria-controls="courses-view-634690d16e781634690d1528155">
+                      Starred
+                    </a>
+                  </li>
+                  <li class="dropdown-divider" role="presentation">
+                    <span class="filler">&nbsp;</span>
+                  </li>
+                  <li>
+                    <a class="dropdown-item " href="#" data-filter="grouping" data-value="hidden" data-pref="hidden" aria-label="Show courses removed from view" aria-controls="courses-view-634690d16e781634690d1528155">
+                      Removed from view
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="list-inline-item">
+                <div class="dropdown bootstrap-select show-tick dropup w-auto">
+                    <button id="sortingdropdown" type="button" class="btn btn-outline-secondary dropdown-toggle" data-toggle="dropdown"  aria-haspopup="true" aria-expanded="false" aria-label="Sorting drop-down menu">
+                        <span class="d-sm-inline-block" data-active-item-text>
+                            
+                            Last accessed
+                        </span>
+                    </button>
+                    <ul class="dropdown-menu" data-show-active-item aria-labelledby="sortingdropdown">
+                        <li>
+                            <a class="dropdown-item " href="#" data-filter="sort" data-pref="title" data-value="fullname" aria-label="Sort courses by course name" aria-controls="courses-view-634690d16e781634690d1528155">
+                                Course name
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item active" href="#" data-filter="sort" data-pref="lastaccessed" data-value="ul.timeaccess desc" aria-label="Sort courses by last accessed date" aria-controls="courses-view-634690d16e781634690d1528155">
+                                Last accessed
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid p-0">
+      <div id="courses-view-634690d16e781634690d1528155"
+          data-region="courses-view"
+          data-display="card"
+          data-grouping="inprogress"
+          data-sort="ul.timeaccess desc"
+          data-prev-display="card"
+          data-paging="0"
+          data-nocoursesimg="http://elearning.almaata.ac.id/theme/image.php/edumy/block_myoverview/1657194583/courses"
+          data-displaycategories="on">
+          <div data-region="course-view-content">
+              <div data-region="loading-placeholder-content" aria-hidden="true">
+              
+                  <div class="course-summaryitem mb-1 p-2">
+                      <div class="d-flex">
+                          <div class="d-flex">
+                              <div class="bg-pulse-grey rounded-circle m-0 p-0 mr-1" style="height: 7rem; width: 7rem;"></div>
+                          </div>
+                          <div class="d-flex w-100 flex-column">
+                              <div class="bg-pulse-grey w-50 mb-1" style="height: 1rem; margin: 0.5rem 0"></div>
+                              <div class="bg-pulse-grey w-100" style="height: 13rem"></div>
+                          </div>
+                      </div>
+                  </div>
+              
+              </div>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </div>
+
+    <span id="sb-3"></span>
+
+</div></aside>
+                  
+                  
+                    <aside id="block-region-below-content" class="block-region" data-blockregion="below-content" data-droptarget="1"></aside>
+                </div>
+                  <div
+                    class=" col-lg-4 col-xl-4 ">
+                    <div class="ccn-sidebar-region" aria-label="Blocks">
+                      <aside id="block-region-side-pre" class="block-region" data-blockregion="side-pre" data-droptarget="1"><div
+  id="inst23918"
+  class="
+    block_timeline block
+    
+    
+     ccnDashBl mb30 "
+  style=""
+  role="complementary"
+  data-block="timeline"
+     >
+
+    <a href="#sb-1" class="sr-only sr-only-focusable">Skip Timeline</a>
+
+    <h4 id="instance-23918-header" class="title ccnDashBlHd">Timeline</h4>
+
+
+  <div class="ccnBlockContent  ccnDashBlCt ">
+    <div id="block-timeline-634690d1663da634690d1528152" class="block-timeline" data-region="timeline">
+    <div class="container p-0 pb-3 border-bottom">
+        <div class="row no-gutters">
+            <div class="col-sm d-flex justify-content-start">
+                <div data-region="day-filter" class="dropdown">
+                    <button type="button" class="btn btn-outline-secondary dropdown-toggle icon-no-margin" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                            aria-label="Filter timeline items" aria-controls="menudayfilter">
+                        <i class="icon fa fa-clock-o fa-fw " aria-hidden="true"  ></i>
+                        <span class="sr-only" data-active-item-text>
+                            
+                            
+                             Next 7 days 
+                            
+                            
+                            
+                        </span>
+                    </button>
+                    <div id="menudayfilter" role="menu" class="dropdown-menu" data-show-active-item>
+                        <a
+                            class="dropdown-item "
+                            href="#"
+                            data-from="-14"
+                            data-filtername="all"
+                            aria-label="All filter option"
+                            role="menuitem"
+                            
+                        >
+                            All
+                        </a>
+                        <a
+                            class="dropdown-item "
+                            href="#"
+                            data-from="-14"
+                            data-to="0"
+                            data-filtername="overdue"
+                            aria-label="Overdue filter option"
+                            role="menuitem"
+                            
+                        >
+                            Overdue
+                        </a>
+                        <div class="dropdown-divider" role="separator"></div>
+                        <h6 class="dropdown-header">Due date</h6>
+                        <a
+                            class="dropdown-item  active "
+                            href="#"
+                            data-from="0"
+                            data-to="7"
+                            data-filtername="next7days"
+                            aria-label="Next 7 days filter option"
+                            role="menuitem"
+                            aria-current="true"
+                        >
+                            Next 7 days
+                        </a>
+                        <a
+                            class="dropdown-item "
+                            href="#"
+                            data-from="0"
+                            data-to="30"
+                            data-filtername="next30days"
+                            aria-label="Next 30 days filter option"
+                            role="menuitem"
+                            
+                        >
+                            Next 30 days
+                        </a>
+                        <a
+                            class="dropdown-item "
+                            href="#"
+                            data-from="0"
+                            data-to="90"
+                            data-filtername="next3months"
+                            aria-label="Next 3 months filter option"
+                            role="menuitem"
+                            
+                        >
+                            Next 3 months
+                        </a>
+                        <a
+                            class="dropdown-item "
+                            href="#"
+                            data-from="0"
+                            data-to="180"
+                            data-filtername="next6months"
+                            aria-label="Next 6 months filter option"
+                            role="menuitem"
+                            
+                        >
+                            Next 6 months
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm d-flex justify-content-end">
+                <div data-region="view-selector" class="btn-group">
+                    <button type="button" class="btn btn-outline-secondary dropdown-toggle icon-no-margin" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                            aria-label="Sort timeline items" aria-controls="menusortby">
+                        <i class="icon fa fa-sort-amount-asc fa-fw " aria-hidden="true"  ></i>
+                        <span class="sr-only" data-active-item-text>
+                            
+                            Sort by dates
+                        </span>
+                    </button>
+                    <div id="menusortby" role="menu" class="dropdown-menu dropdown-menu-right list-group hidden" data-show-active-item data-skip-active-class="true">
+                        <a
+                            class="dropdown-item active"
+                            href="#view_dates_634690d1663da634690d1528152"
+                            data-toggle="tab"
+                            data-filtername="sortbydates"
+                            aria-label="Sort by dates sort option"
+                            role="menuitem"
+                            aria-current="true"
+                        >
+                            Sort by dates
+                        </a>
+                        <a
+                            class="dropdown-item "
+                            href="#view_courses_634690d1663da634690d1528152"
+                            data-toggle="tab"
+                            data-filtername="sortbycourses"
+                            aria-label="Sort by courses sort option"
+                            role="menuitem"
+                            
+                        >
+                            Sort by courses
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container p-0">
+        <div data-region="timeline-view">
+            <div class="tab-content">
+                <div class="tab-pane active show fade" data-limit="5" data-region="view-dates" id="view_dates_634690d1663da634690d1528152">
+                    <div data-region="timeline-view-dates">
+                        <div data-region="event-list-container"
+                             data-days-offset="0"
+                             data-days-limit="7"
+                             data-course-id=""
+                             data-midnight="1665507600"
+                        >
+                            <div data-region="event-list-loading-placeholder">
+                                <ul class="pl-0 list-group list-group-flush">
+                                    <li class="list-group-item pl-0 pr-0">
+                                        <div class="row">
+                                            <div class="col-8 pr-0">
+                                                <div class="d-flex flex-row align-items-center" style="height: 32px">
+                                                    <div class="bg-pulse-grey rounded-circle" style="height: 32px; width: 32px;"></div>
+                                                    <div style="flex: 1" class="pl-2">
+                                                        <div class="bg-pulse-grey w-100" style="height: 15px;"></div>
+                                                        <div class="bg-pulse-grey w-75 mt-1" style="height: 10px;"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-4 pr-3">
+                                                <div class="d-flex flex-row justify-content-end" style="height: 32px; padding-top: 2px">
+                                                    <div class="bg-pulse-grey w-75" style="height: 15px;"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item pl-0 pr-0">
+                                        <div class="row">
+                                            <div class="col-8 pr-0">
+                                                <div class="d-flex flex-row align-items-center" style="height: 32px">
+                                                    <div class="bg-pulse-grey rounded-circle" style="height: 32px; width: 32px;"></div>
+                                                    <div style="flex: 1" class="pl-2">
+                                                        <div class="bg-pulse-grey w-100" style="height: 15px;"></div>
+                                                        <div class="bg-pulse-grey w-75 mt-1" style="height: 10px;"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-4 pr-3">
+                                                <div class="d-flex flex-row justify-content-end" style="height: 32px; padding-top: 2px">
+                                                    <div class="bg-pulse-grey w-75" style="height: 15px;"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item pl-0 pr-0">
+                                        <div class="row">
+                                            <div class="col-8 pr-0">
+                                                <div class="d-flex flex-row align-items-center" style="height: 32px">
+                                                    <div class="bg-pulse-grey rounded-circle" style="height: 32px; width: 32px;"></div>
+                                                    <div style="flex: 1" class="pl-2">
+                                                        <div class="bg-pulse-grey w-100" style="height: 15px;"></div>
+                                                        <div class="bg-pulse-grey w-75 mt-1" style="height: 10px;"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-4 pr-3">
+                                                <div class="d-flex flex-row justify-content-end" style="height: 32px; padding-top: 2px">
+                                                    <div class="bg-pulse-grey w-75" style="height: 15px;"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item pl-0 pr-0">
+                                        <div class="row">
+                                            <div class="col-8 pr-0">
+                                                <div class="d-flex flex-row align-items-center" style="height: 32px">
+                                                    <div class="bg-pulse-grey rounded-circle" style="height: 32px; width: 32px;"></div>
+                                                    <div style="flex: 1" class="pl-2">
+                                                        <div class="bg-pulse-grey w-100" style="height: 15px;"></div>
+                                                        <div class="bg-pulse-grey w-75 mt-1" style="height: 10px;"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-4 pr-3">
+                                                <div class="d-flex flex-row justify-content-end" style="height: 32px; padding-top: 2px">
+                                                    <div class="bg-pulse-grey w-75" style="height: 15px;"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item pl-0 pr-0">
+                                        <div class="row">
+                                            <div class="col-8 pr-0">
+                                                <div class="d-flex flex-row align-items-center" style="height: 32px">
+                                                    <div class="bg-pulse-grey rounded-circle" style="height: 32px; width: 32px;"></div>
+                                                    <div style="flex: 1" class="pl-2">
+                                                        <div class="bg-pulse-grey w-100" style="height: 15px;"></div>
+                                                        <div class="bg-pulse-grey w-75 mt-1" style="height: 10px;"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-4 pr-3">
+                                                <div class="d-flex flex-row justify-content-end" style="height: 32px; padding-top: 2px">
+                                                    <div class="bg-pulse-grey w-75" style="height: 15px;"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <div class="pt-3 d-flex justify-content-between">
+                                    <div class="w-25 bg-pulse-grey" style="height: 35px"></div>
+                                    <div class="w-25 bg-pulse-grey" style="height: 35px"></div>
+                                </div>
+                            </div>
+                            <div data-region="event-list-content"></div>
+                            <div class="hidden text-xs-center text-center mt-3" data-region="empty-message">
+                                <img
+                                    src="http://elearning.almaata.ac.id/theme/image.php/edumy/block_timeline/1657194583/activities"
+                                    alt="No upcoming activities due"
+                                    role="presentation"
+                                    style="height: 70px; width: 70px"
+                                >
+                                <p class="text-muted mt-1">No upcoming activities due</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="tab-pane  fade"
+                    data-region="view-courses"
+                    data-midnight="1665507600"
+                    data-limit="2"
+                    data-offset="0"
+                    data-days-limit="30"
+                    data-days-offset="0"
+                    data-no-events-url="http://elearning.almaata.ac.id/theme/image.php/edumy/block_timeline/1657194583/activities"
+                    id="view_courses_634690d1663da634690d1528152"
+                >
+                    <div data-region="course-items-loading-placeholder">
+                        <ul class="list-group unstyled">
+                            <li class="list-group-item mt-3 p-0 border-0">
+                                <div class="w-50 bg-pulse-grey mb-2" style="height: 20px"></div>
+                                <div>
+                                    <ul class="pl-0 list-group list-group-flush">
+                                        <li class="list-group-item pl-0 pr-0">
+                                            <div class="row">
+                                                <div class="col-8 pr-0">
+                                                    <div class="d-flex flex-row align-items-center" style="height: 32px">
+                                                        <div class="bg-pulse-grey rounded-circle" style="height: 32px; width: 32px;"></div>
+                                                        <div style="flex: 1" class="pl-2">
+                                                            <div class="bg-pulse-grey w-100" style="height: 15px;"></div>
+                                                            <div class="bg-pulse-grey w-75 mt-1" style="height: 10px;"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-4 pr-3">
+                                                    <div class="d-flex flex-row justify-content-end" style="height: 32px; padding-top: 2px">
+                                                        <div class="bg-pulse-grey w-75" style="height: 15px;"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item pl-0 pr-0">
+                                            <div class="row">
+                                                <div class="col-8 pr-0">
+                                                    <div class="d-flex flex-row align-items-center" style="height: 32px">
+                                                        <div class="bg-pulse-grey rounded-circle" style="height: 32px; width: 32px;"></div>
+                                                        <div style="flex: 1" class="pl-2">
+                                                            <div class="bg-pulse-grey w-100" style="height: 15px;"></div>
+                                                            <div class="bg-pulse-grey w-75 mt-1" style="height: 10px;"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-4 pr-3">
+                                                    <div class="d-flex flex-row justify-content-end" style="height: 32px; padding-top: 2px">
+                                                        <div class="bg-pulse-grey w-75" style="height: 15px;"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item pl-0 pr-0">
+                                            <div class="row">
+                                                <div class="col-8 pr-0">
+                                                    <div class="d-flex flex-row align-items-center" style="height: 32px">
+                                                        <div class="bg-pulse-grey rounded-circle" style="height: 32px; width: 32px;"></div>
+                                                        <div style="flex: 1" class="pl-2">
+                                                            <div class="bg-pulse-grey w-100" style="height: 15px;"></div>
+                                                            <div class="bg-pulse-grey w-75 mt-1" style="height: 10px;"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-4 pr-3">
+                                                    <div class="d-flex flex-row justify-content-end" style="height: 32px; padding-top: 2px">
+                                                        <div class="bg-pulse-grey w-75" style="height: 15px;"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item pl-0 pr-0">
+                                            <div class="row">
+                                                <div class="col-8 pr-0">
+                                                    <div class="d-flex flex-row align-items-center" style="height: 32px">
+                                                        <div class="bg-pulse-grey rounded-circle" style="height: 32px; width: 32px;"></div>
+                                                        <div style="flex: 1" class="pl-2">
+                                                            <div class="bg-pulse-grey w-100" style="height: 15px;"></div>
+                                                            <div class="bg-pulse-grey w-75 mt-1" style="height: 10px;"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-4 pr-3">
+                                                    <div class="d-flex flex-row justify-content-end" style="height: 32px; padding-top: 2px">
+                                                        <div class="bg-pulse-grey w-75" style="height: 15px;"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item pl-0 pr-0">
+                                            <div class="row">
+                                                <div class="col-8 pr-0">
+                                                    <div class="d-flex flex-row align-items-center" style="height: 32px">
+                                                        <div class="bg-pulse-grey rounded-circle" style="height: 32px; width: 32px;"></div>
+                                                        <div style="flex: 1" class="pl-2">
+                                                            <div class="bg-pulse-grey w-100" style="height: 15px;"></div>
+                                                            <div class="bg-pulse-grey w-75 mt-1" style="height: 10px;"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-4 pr-3">
+                                                    <div class="d-flex flex-row justify-content-end" style="height: 32px; padding-top: 2px">
+                                                        <div class="bg-pulse-grey w-75" style="height: 15px;"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <div class="pt-3 d-flex justify-content-between">
+                                        <div class="w-25 bg-pulse-grey" style="height: 35px"></div>
+                                        <div class="w-25 bg-pulse-grey" style="height: 35px"></div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="list-group-item mt-3 p-0 border-0">
+                                <div class="w-50 bg-pulse-grey mb-2" style="height: 20px"></div>
+                                <div>
+                                    <ul class="pl-0 list-group list-group-flush">
+                                        <li class="list-group-item pl-0 pr-0">
+                                            <div class="row">
+                                                <div class="col-8 pr-0">
+                                                    <div class="d-flex flex-row align-items-center" style="height: 32px">
+                                                        <div class="bg-pulse-grey rounded-circle" style="height: 32px; width: 32px;"></div>
+                                                        <div style="flex: 1" class="pl-2">
+                                                            <div class="bg-pulse-grey w-100" style="height: 15px;"></div>
+                                                            <div class="bg-pulse-grey w-75 mt-1" style="height: 10px;"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-4 pr-3">
+                                                    <div class="d-flex flex-row justify-content-end" style="height: 32px; padding-top: 2px">
+                                                        <div class="bg-pulse-grey w-75" style="height: 15px;"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item pl-0 pr-0">
+                                            <div class="row">
+                                                <div class="col-8 pr-0">
+                                                    <div class="d-flex flex-row align-items-center" style="height: 32px">
+                                                        <div class="bg-pulse-grey rounded-circle" style="height: 32px; width: 32px;"></div>
+                                                        <div style="flex: 1" class="pl-2">
+                                                            <div class="bg-pulse-grey w-100" style="height: 15px;"></div>
+                                                            <div class="bg-pulse-grey w-75 mt-1" style="height: 10px;"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-4 pr-3">
+                                                    <div class="d-flex flex-row justify-content-end" style="height: 32px; padding-top: 2px">
+                                                        <div class="bg-pulse-grey w-75" style="height: 15px;"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item pl-0 pr-0">
+                                            <div class="row">
+                                                <div class="col-8 pr-0">
+                                                    <div class="d-flex flex-row align-items-center" style="height: 32px">
+                                                        <div class="bg-pulse-grey rounded-circle" style="height: 32px; width: 32px;"></div>
+                                                        <div style="flex: 1" class="pl-2">
+                                                            <div class="bg-pulse-grey w-100" style="height: 15px;"></div>
+                                                            <div class="bg-pulse-grey w-75 mt-1" style="height: 10px;"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-4 pr-3">
+                                                    <div class="d-flex flex-row justify-content-end" style="height: 32px; padding-top: 2px">
+                                                        <div class="bg-pulse-grey w-75" style="height: 15px;"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item pl-0 pr-0">
+                                            <div class="row">
+                                                <div class="col-8 pr-0">
+                                                    <div class="d-flex flex-row align-items-center" style="height: 32px">
+                                                        <div class="bg-pulse-grey rounded-circle" style="height: 32px; width: 32px;"></div>
+                                                        <div style="flex: 1" class="pl-2">
+                                                            <div class="bg-pulse-grey w-100" style="height: 15px;"></div>
+                                                            <div class="bg-pulse-grey w-75 mt-1" style="height: 10px;"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-4 pr-3">
+                                                    <div class="d-flex flex-row justify-content-end" style="height: 32px; padding-top: 2px">
+                                                        <div class="bg-pulse-grey w-75" style="height: 15px;"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item pl-0 pr-0">
+                                            <div class="row">
+                                                <div class="col-8 pr-0">
+                                                    <div class="d-flex flex-row align-items-center" style="height: 32px">
+                                                        <div class="bg-pulse-grey rounded-circle" style="height: 32px; width: 32px;"></div>
+                                                        <div style="flex: 1" class="pl-2">
+                                                            <div class="bg-pulse-grey w-100" style="height: 15px;"></div>
+                                                            <div class="bg-pulse-grey w-75 mt-1" style="height: 10px;"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-4 pr-3">
+                                                    <div class="d-flex flex-row justify-content-end" style="height: 32px; padding-top: 2px">
+                                                        <div class="bg-pulse-grey w-75" style="height: 15px;"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <div class="pt-3 d-flex justify-content-between">
+                                        <div class="w-25 bg-pulse-grey" style="height: 35px"></div>
+                                        <div class="w-25 bg-pulse-grey" style="height: 35px"></div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="bg-pulse-grey mt-1" style="width: 100px; height: 30px; margin-left: auto; margin-right: auto"></div>
+                    </div>
+                    <ul class="list-group unstyled" data-region="courses-list"></ul>
+                    <div class="hidden text-xs-center text-center pt-3" data-region="more-courses-button-container">
+                        <button type="button" class="btn btn-secondary" data-action="more-courses">
+                            More courses
+                            <span class="hidden" data-region="loading-icon-container">
+                                <span class="loading-icon icon-no-margin"><i class="icon fa fa-circle-o-notch fa-spin fa-fw "  title="Loading" aria-label="Loading"></i></span>
+                            </span>
+                        </button>
+                    </div>
+                    <div class="hidden text-xs-center text-center mt-3" data-region="no-courses-empty-message">
+                        <img
+                            src="http://elearning.almaata.ac.id/theme/image.php/edumy/block_timeline/1657194583/activities"
+                            alt="No in-progress courses"
+                            role="presentation"
+                            style="height: 70px; width: 70px"
+                        >
+                        <p class="text-muted mt-1">No in-progress courses</p>
+                    </div>
+                </div>
+            </div>
+        </div>    </div>
+</div>
+    
+    
+  </div>
+
+    <span id="sb-1"></span>
+
+</div><div
+  id="inst23919"
+  class="
+    block_online_users block
+    
+    
+     ccnDashBl mb30 "
+  style=""
+  role="complementary"
+  data-block="online_users"
+     >
+
+    <a href="#sb-2" class="sr-only sr-only-focusable">Skip Online users</a>
+
+    <h4 id="instance-23919-header" class="title ccnDashBlHd">Online users</h4>
+
+
+  <div class="ccnBlockContent  ccnDashBlCt ">
+    <div class="info">61 online users (last 5 minutes)</div><ul class='list'>
+<li class="listentry"><div class="user"><a href="http://elearning.almaata.ac.id/user/view.php?id=3577&amp;course=1" title="now"><img src="http://elearning.almaata.ac.id/pluginfile.php/51008/user/icon/edumy/f2?rev=581970" class="userpicture" width="16" height="16" />MUHAMMAD GANANG PRASETYA SISTEM INFORMASI 2020</a></div><div class="uservisibility"><a title="Show my online status to other users" data-action="show" data-userid="3577" id="change-user-visibility" href=""><i class="icon fa fa-eye-slash fa-fw "  title="Show my online status to other users" aria-label="Show my online status to other users"></i></a></div></li>
+<li class="listentry"><div class="user"><a href="http://elearning.almaata.ac.id/user/view.php?id=3899&amp;course=1" title="9 secs"><img src="http://elearning.almaata.ac.id/theme/image.php/edumy/core/1657194583/u/f2" class="userpicture defaultuserpic" width="16" height="16" />ALMA RAHMA ATHIFAH AKUNTANSI 2020</a></div></li>
+<li class="listentry"><div class="user"><a href="http://elearning.almaata.ac.id/user/view.php?id=5387&amp;course=1" title="19 secs"><img src="http://elearning.almaata.ac.id/pluginfile.php/110190/user/icon/edumy/f2?rev=1124010" class="userpicture" width="16" height="16" />ABDUL RAHMAN LUBIS S1 Farmasi</a></div></li>
+<li class="listentry"><div class="user"><a href="http://elearning.almaata.ac.id/user/view.php?id=3894&amp;course=1" title="20 secs"><img src="http://elearning.almaata.ac.id/pluginfile.php/51325/user/icon/edumy/f2?rev=1105583" class="userpicture" width="16" height="16" />NOVIA FITRILIANTANTI AKUNTANSI 2020</a></div></li>
+<li class="listentry"><div class="user"><a href="http://elearning.almaata.ac.id/user/view.php?id=4101&amp;course=1" title="22 secs"><img src="http://elearning.almaata.ac.id/pluginfile.php/51532/user/icon/edumy/f2?rev=1052047" class="userpicture" width="16" height="16" />YUDHA YULIARTA PERDANA PENDIDIKAN MATEMATIKA 2020</a></div></li>
+<li class="listentry"><div class="user"><a href="http://elearning.almaata.ac.id/user/view.php?id=5575&amp;course=1" title="25 secs"><img src="http://elearning.almaata.ac.id/pluginfile.php/110378/user/icon/edumy/f2?rev=1127504" class="userpicture" width="16" height="16" />WHENI SUANGGA TORIFA S1 Pendidikan Agama Islam</a></div></li>
+<li class="listentry"><div class="user"><a href="http://elearning.almaata.ac.id/user/view.php?id=794&amp;course=1" title="31 secs"><img src="http://elearning.almaata.ac.id/theme/image.php/edumy/core/1657194583/u/f2" class="userpicture defaultuserpic" width="16" height="16" />AUDIA N. RUMBAREMATA FARMASI 2018</a></div></li>
+<li class="listentry"><div class="user"><a href="http://elearning.almaata.ac.id/user/view.php?id=7295&amp;course=1" title="37 secs"><img src="http://elearning.almaata.ac.id/pluginfile.php/163467/user/icon/edumy/f2?rev=1824831" class="userpicture" width="16" height="16" />DZULFATTAH SIFA SISTEM INFORMASI</a></div></li>
+<li class="listentry"><div class="user"><a href="http://elearning.almaata.ac.id/user/view.php?id=5552&amp;course=1" title="50 secs"><img src="http://elearning.almaata.ac.id/pluginfile.php/110355/user/icon/edumy/f2?rev=1127796" class="userpicture" width="16" height="16" />NABILA ULFA S1 Pendidikan Agama Islam</a></div></li>
+<li class="listentry"><div class="user"><a href="http://elearning.almaata.ac.id/user/view.php?id=2809&amp;course=1" title="54 secs"><img src="http://elearning.almaata.ac.id/theme/image.php/edumy/core/1657194583/u/f2" class="userpicture defaultuserpic" width="16" height="16" />DEWI LALA SAFITRI PENDIDIKAN MATEMATIKA 2019</a></div></li>
+<li class="listentry"><div class="user"><a href="http://elearning.almaata.ac.id/user/view.php?id=5581&amp;course=1" title="1 min 2 secs"><img src="http://elearning.almaata.ac.id/pluginfile.php/110384/user/icon/edumy/f2?rev=1146162" class="userpicture" width="16" height="16" />MUHAMAD AKBAR S1 Pendidikan Agama Islam</a></div></li>
+<li class="listentry"><div class="user"><a href="http://elearning.almaata.ac.id/user/view.php?id=5582&amp;course=1" title="1 min 4 secs"><img src="http://elearning.almaata.ac.id/pluginfile.php/110385/user/icon/edumy/f2?rev=1137980" class="userpicture" width="16" height="16" />MUHAMMAD BILHAQQI NAZAL S1 Pendidikan Agama Islam</a></div></li>
+<li class="listentry"><div class="user"><a href="http://elearning.almaata.ac.id/user/view.php?id=4058&amp;course=1" title="1 min 10 secs"><img src="http://elearning.almaata.ac.id/pluginfile.php/51489/user/icon/edumy/f2?rev=405567" class="userpicture" width="16" height="16" />DWI QUROFATUL AYUNI PENDIDIKAN MATEMATIKA 2020</a></div></li>
+<li class="listentry"><div class="user"><a href="http://elearning.almaata.ac.id/user/view.php?id=3927&amp;course=1" title="1 min 14 secs"><img src="http://elearning.almaata.ac.id/pluginfile.php/51358/user/icon/edumy/f2?rev=600406" class="userpicture" width="16" height="16" />MUNNAWAROH RAHMANITA AKUNTANSI 2020</a></div></li>
+<li class="listentry"><div class="user"><a href="http://elearning.almaata.ac.id/user/view.php?id=4093&amp;course=1" title="1 min 26 secs"><img src="http://elearning.almaata.ac.id/theme/image.php/edumy/core/1657194583/u/f2" class="userpicture defaultuserpic" width="16" height="16" />TARISA AFIYANTI PENDIDIKAN MATEMATIKA 2020</a></div></li>
+<li class="listentry"><div class="user"><a href="http://elearning.almaata.ac.id/user/view.php?id=5833&amp;course=1" title="1 min 28 secs"><img src="http://elearning.almaata.ac.id/pluginfile.php/110636/user/icon/edumy/f2?rev=1124527" class="userpicture" width="16" height="16" />ISMI PUTRI MUZAYYANAH S1 Ekonomi Syariah</a></div></li>
+<li class="listentry"><div class="user"><a href="http://elearning.almaata.ac.id/user/view.php?id=3902&amp;course=1" title="1 min 28 secs"><img src="http://elearning.almaata.ac.id/pluginfile.php/51333/user/icon/edumy/f2?rev=1600619" class="userpicture" width="16" height="16" />DIAN AYU NIRMALA AKUNTANSI 2020</a></div></li>
+<li class="listentry"><div class="user"><a href="http://elearning.almaata.ac.id/user/view.php?id=5585&amp;course=1" title="1 min 29 secs"><img src="http://elearning.almaata.ac.id/pluginfile.php/110388/user/icon/edumy/f2?rev=1127560" class="userpicture" width="16" height="16" />YOGA LATIF VERDIYANTO S1 Pendidikan Agama Islam</a></div></li>
+<li class="listentry"><div class="user"><a href="http://elearning.almaata.ac.id/user/view.php?id=4076&amp;course=1" title="1 min 31 secs"><img src="http://elearning.almaata.ac.id/pluginfile.php/51507/user/icon/edumy/f2?rev=341593" class="userpicture" width="16" height="16" />MUHAMMAD ISNAN</a></div></li>
+<li class="listentry"><div class="user"><a href="http://elearning.almaata.ac.id/user/view.php?id=5827&amp;course=1" title="1 min 41 secs"><img src="http://elearning.almaata.ac.id/pluginfile.php/110630/user/icon/edumy/f2?rev=1118898" class="userpicture" width="16" height="16" />LILIS SURYANI S1 Ekonomi Syariah</a></div></li>
+<li class="listentry"><div class="user"><a href="http://elearning.almaata.ac.id/user/view.php?id=5824&amp;course=1" title="1 min 48 secs"><img src="http://elearning.almaata.ac.id/pluginfile.php/110627/user/icon/edumy/f2?rev=1137016" class="userpicture" width="16" height="16" />SITTI MAIMUNAH S1 Ekonomi Syariah</a></div></li>
+<li class="listentry"><div class="user"><a href="http://elearning.almaata.ac.id/user/view.php?id=4045&amp;course=1" title="1 min 49 secs"><img src="http://elearning.almaata.ac.id/pluginfile.php/51476/user/icon/edumy/f2?rev=377775" class="userpicture" width="16" height="16" />AISATUL MUTTAQIYAH PENDIDIKAN MATEMATIKA 2020</a></div></li>
+<li class="listentry"><div class="user"><a href="http://elearning.almaata.ac.id/user/view.php?id=3965&amp;course=1" title="1 min 49 secs"><img src="http://elearning.almaata.ac.id/pluginfile.php/51396/user/icon/edumy/f2?rev=572884" class="userpicture" width="16" height="16" />AYU JUWITA TAMHER PENDIDIKAN GURU SD 2020</a></div></li>
+<li class="listentry"><div class="user"><a href="http://elearning.almaata.ac.id/user/view.php?id=6492&amp;course=1" title="1 min 51 secs"><img src="http://elearning.almaata.ac.id/theme/image.php/edumy/core/1657194583/u/f2" class="userpicture defaultuserpic" width="16" height="16" />ALFINA HABIBAH PENDIDIKAN AGAMA ISLAM</a></div></li>
+<li class="listentry"><div class="user"><a href="http://elearning.almaata.ac.id/user/view.php?id=3860&amp;course=1" title="2 mins"><img src="http://elearning.almaata.ac.id/theme/image.php/edumy/core/1657194583/u/f2" class="userpicture defaultuserpic" width="16" height="16" />IKA NURUL KHASANAH AKUNTANSI 2020</a></div></li>
+<li class="listentry"><div class="user"><a href="http://elearning.almaata.ac.id/user/view.php?id=3679&amp;course=1" title="2 mins 2 secs"><img src="http://elearning.almaata.ac.id/theme/image.php/edumy/core/1657194583/u/f2" class="userpicture defaultuserpic" width="16" height="16" />SUSANTO INFORMATIKA 2020</a></div></li>
+<li class="listentry"><div class="user"><a href="http://elearning.almaata.ac.id/user/view.php?id=4104&amp;course=1" title="2 mins 5 secs"><img src="http://elearning.almaata.ac.id/theme/image.php/edumy/core/1657194583/u/f2" class="userpicture defaultuserpic" width="16" height="16" />DESI FITRI ASTUTI PENDIDIKAN MATEMATIKA 2020</a></div></li>
+<li class="listentry"><div class="user"><a href="http://elearning.almaata.ac.id/user/view.php?id=5562&amp;course=1" title="2 mins 9 secs"><img src="http://elearning.almaata.ac.id/pluginfile.php/110365/user/icon/edumy/f2?rev=1123489" class="userpicture" width="16" height="16" />RIFQI NURUL FAJRI S1 Pendidikan Agama Islam</a></div></li>
+<li class="listentry"><div class="user"><a href="http://elearning.almaata.ac.id/user/view.php?id=6577&amp;course=1" title="2 mins 30 secs"><img src="http://elearning.almaata.ac.id/pluginfile.php/162749/user/icon/edumy/f2?rev=1828157" class="userpicture" width="16" height="16" />NUR ANNISA AWALIYYAH AL-MADYAN PENDIDIKAN AGAMA ISLAM</a></div></li>
+<li class="listentry"><div class="user"><a href="http://elearning.almaata.ac.id/user/view.php?id=4116&amp;course=1" title="2 mins 32 secs"><img src="http://elearning.almaata.ac.id/pluginfile.php/51547/user/icon/edumy/f2?rev=1280053" class="userpicture" width="16" height="16" />KARSINI PENDIDIKAN MATEMATIKA 2020</a></div></li>
+<li class="listentry"><div class="user"><a href="http://elearning.almaata.ac.id/user/view.php?id=6521&amp;course=1" title="2 mins 35 secs"><img src="http://elearning.almaata.ac.id/theme/image.php/edumy/core/1657194583/u/f2" class="userpicture defaultuserpic" width="16" height="16" />MUHAMMAD BAHRUL BAHAR PENDIDIKAN AGAMA ISLAM</a></div></li>
+<li class="listentry"><div class="user"><a href="http://elearning.almaata.ac.id/user/view.php?id=5572&amp;course=1" title="2 mins 46 secs"><img src="http://elearning.almaata.ac.id/pluginfile.php/110375/user/icon/edumy/f2?rev=1127667" class="userpicture" width="16" height="16" />TITIK GUNTARI S1 Pendidikan Agama Islam</a></div></li>
+<li class="listentry"><div class="user"><a href="http://elearning.almaata.ac.id/user/view.php?id=4055&amp;course=1" title="2 mins 48 secs"><img src="http://elearning.almaata.ac.id/theme/image.php/edumy/core/1657194583/u/f2" class="userpicture defaultuserpic" width="16" height="16" />BADRIYATUL ARIYA MALDIANA PENDIDIKAN MATEMATIKA 2020</a></div></li>
+<li class="listentry"><div class="user"><a href="http://elearning.almaata.ac.id/user/view.php?id=6079&amp;course=1" title="2 mins 49 secs"><img src="http://elearning.almaata.ac.id/pluginfile.php/110882/user/icon/edumy/f2?rev=1119758" class="userpicture" width="16" height="16" />AULIA MAIMUNAH S1 Sistem Informasi</a></div></li>
+<li class="listentry"><div class="user"><a href="http://elearning.almaata.ac.id/user/view.php?id=5306&amp;course=1" title="2 mins 55 secs"><img src="http://elearning.almaata.ac.id/pluginfile.php/110109/user/icon/edumy/f2?rev=1148688" class="userpicture" width="16" height="16" />DINDA PUTRI IRHAMNA S1 Gizi</a></div></li>
+<li class="listentry"><div class="user"><a href="http://elearning.almaata.ac.id/user/view.php?id=4109&amp;course=1" title="2 mins 56 secs"><img src="http://elearning.almaata.ac.id/pluginfile.php/51540/user/icon/edumy/f2?rev=872417" class="userpicture" width="16" height="16" />MUHAMMAD FAQIH MUQODDAS PENDIDIKAN MATEMATIKA 2020</a></div></li>
+<li class="listentry"><div class="user"><a href="http://elearning.almaata.ac.id/user/view.php?id=3698&amp;course=1" title="2 mins 56 secs"><img src="http://elearning.almaata.ac.id/theme/image.php/edumy/core/1657194583/u/f2" class="userpicture defaultuserpic" width="16" height="16" />SALIS NIZAR QOMARUZAMAN INFORMATIKA 2020</a></div></li>
+<li class="listentry"><div class="user"><a href="http://elearning.almaata.ac.id/user/view.php?id=7016&amp;course=1" title="3 mins 11 secs"><img src="http://elearning.almaata.ac.id/theme/image.php/edumy/core/1657194583/u/f2" class="userpicture defaultuserpic" width="16" height="16" />MIA AULIA MUHAJIR ADMINISTRASI RUMAH SAKIT</a></div></li>
+<li class="listentry"><div class="user"><a href="http://elearning.almaata.ac.id/user/view.php?id=4047&amp;course=1" title="3 mins 21 secs"><img src="http://elearning.almaata.ac.id/pluginfile.php/51478/user/icon/edumy/f2?rev=1280095" class="userpicture" width="16" height="16" />ALDA OKTARIA MIRANDA PENDIDIKAN MATEMATIKA 2020</a></div></li>
+<li class="listentry"><div class="user"><a href="http://elearning.almaata.ac.id/user/view.php?id=3693&amp;course=1" title="3 mins 25 secs"><img src="http://elearning.almaata.ac.id/theme/image.php/edumy/core/1657194583/u/f2" class="userpicture defaultuserpic" width="16" height="16" />PRITA NOVIANA INFORMATIKA 2020</a></div></li>
+<li class="listentry"><div class="user"><a href="http://elearning.almaata.ac.id/user/view.php?id=5583&amp;course=1" title="3 mins 30 secs"><img src="http://elearning.almaata.ac.id/pluginfile.php/110386/user/icon/edumy/f2?rev=1123953" class="userpicture" width="16" height="16" />NAHDIAN ALMUSAFA S1 Pendidikan Agama Islam</a></div></li>
+<li class="listentry"><div class="user"><a href="http://elearning.almaata.ac.id/user/view.php?id=5876&amp;course=1" title="3 mins 43 secs"><img src="http://elearning.almaata.ac.id/pluginfile.php/110679/user/icon/edumy/f2?rev=1127359" class="userpicture" width="16" height="16" />TITIS ALBERT WAHYUDI S1 Ekonomi Syariah</a></div></li>
+<li class="listentry"><div class="user"><a href="http://elearning.almaata.ac.id/user/view.php?id=4085&amp;course=1" title="3 mins 43 secs"><img src="http://elearning.almaata.ac.id/pluginfile.php/51516/user/icon/edumy/f2?rev=1396714" class="userpicture" width="16" height="16" />ROSSY SULISTYAWATI PENDIDIKAN MATEMATIKA 2020</a></div></li>
+<li class="listentry"><div class="user"><a href="http://elearning.almaata.ac.id/user/view.php?id=4073&amp;course=1" title="3 mins 48 secs"><img src="http://elearning.almaata.ac.id/pluginfile.php/51504/user/icon/edumy/f2?rev=1517438" class="userpicture" width="16" height="16" />LISA ANANDA PENDIDIKAN MATEMATIKA 2020</a></div></li>
+<li class="listentry"><div class="user"><a href="http://elearning.almaata.ac.id/user/view.php?id=4074&amp;course=1" title="3 mins 53 secs"><img src="http://elearning.almaata.ac.id/pluginfile.php/51505/user/icon/edumy/f2?rev=365927" class="userpicture" width="16" height="16" />MIRA MULYANI PENDIDIKAN MATEMATIKA 2020</a></div></li>
+<li class="listentry"><div class="user"><a href="http://elearning.almaata.ac.id/user/view.php?id=5578&amp;course=1" title="3 mins 58 secs"><img src="http://elearning.almaata.ac.id/pluginfile.php/110381/user/icon/edumy/f2?rev=1127131" class="userpicture" width="16" height="16" />ZAIDAN NAZIF MUYASAR S1 Pendidikan Agama Islam</a></div></li>
+<li class="listentry"><div class="user"><a href="http://elearning.almaata.ac.id/user/view.php?id=3543&amp;course=1" title="4 mins 2 secs"><img src="http://elearning.almaata.ac.id/pluginfile.php/48278/user/icon/edumy/f2?rev=306385" class="userpicture" width="16" height="16" />Dr. Muh. Mustakim, M.Pd.I</a></div></li>
+<li class="listentry"><div class="user"><a href="http://elearning.almaata.ac.id/user/view.php?id=3675&amp;course=1" title="4 mins 5 secs"><img src="http://elearning.almaata.ac.id/pluginfile.php/51106/user/icon/edumy/f2?rev=412865" class="userpicture" width="16" height="16" />IMAM HAMBALI INFORMATIKA 2020</a></div></li>
+<li class="listentry"><div class="user"><a href="http://elearning.almaata.ac.id/user/view.php?id=3878&amp;course=1" title="4 mins 21 secs"><img src="http://elearning.almaata.ac.id/theme/image.php/edumy/core/1657194583/u/f2" class="userpicture defaultuserpic" width="16" height="16" />ABDI PENARA AKUNTANSI 2020</a></div></li>
+<li class="listentry"><div class="user"><a href="http://elearning.almaata.ac.id/user/view.php?id=4081&amp;course=1" title="4 mins 23 secs"><img src="http://elearning.almaata.ac.id/pluginfile.php/51512/user/icon/edumy/f2?rev=547628" class="userpicture" width="16" height="16" />RAHMA HIDAYAH NUR HARTANTI PENDIDIKAN MATEMATIKA 2020</a></div></li>
+</ul><div class="clearer"><!-- --></div>
+    
+    
+  </div>
+
+    <span id="sb-2"></span>
+
+</div></aside>
+                    </div>
+                  </div>
+                  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                    <aside id="block-region-fullwidth-bottom" class="block-region" data-blockregion="fullwidth-bottom" data-droptarget="1"></aside>
+                  </div>
+              </div>
+            </div>
+          </div>
+          <div class="row mt10 pb50">
+            <div class="col-lg-12">
+              <div class="copyright-widget text-center">
+                <p class="color-black2"></p>
+              </div>
+            </div>
+          </div>
+          
+          <script type="text/javascript">
+//<![CDATA[
+var require = {
+    baseUrl : 'http://elearning.almaata.ac.id/lib/requirejs.php/1626509243/',
+    // We only support AMD modules with an explicit define() statement.
+    enforceDefine: true,
+    skipDataMain: true,
+    waitSeconds : 0,
+
+    paths: {
+        jquery: 'http://elearning.almaata.ac.id/lib/javascript.php/1626509243/lib/jquery/jquery-3.4.1.min',
+        jqueryui: 'http://elearning.almaata.ac.id/lib/javascript.php/1626509243/lib/jquery/ui-1.12.1/jquery-ui.min',
+        jqueryprivate: 'http://elearning.almaata.ac.id/lib/javascript.php/1626509243/lib/requirejs/jquery-private'
+    },
+
+    // Custom jquery config map.
+    map: {
+      // '*' means all modules will get 'jqueryprivate'
+      // for their 'jquery' dependency.
+      '*': { jquery: 'jqueryprivate' },
+      // Stub module for 'process'. This is a workaround for a bug in MathJax (see MDL-60458).
+      '*': { process: 'core/first' },
+
+      // 'jquery-private' wants the real jQuery module
+      // though. If this line was not here, there would
+      // be an unresolvable cyclic dependency.
+      jqueryprivate: { jquery: 'jquery' }
+    }
+};
+
+//]]>
+</script>
+<script type="text/javascript" src="http://elearning.almaata.ac.id/lib/javascript.php/1626509243/lib/requirejs/require.min.js"></script>
+<script type="text/javascript">
+//<![CDATA[
+M.util.js_pending("core/first");require(['core/first'], function() {
+;
+require(["media_videojs/loader"], function(loader) {
+    loader.setUp(function(videojs) {
+        videojs.options.flash.swf = "http://elearning.almaata.ac.id/media/player/videojs/videojs/video-js.swf";
+videojs.addLanguage('en', {
+  "Audio Player": "Audio Player",
+  "Video Player": "Video Player",
+  "Play": "Play",
+  "Pause": "Pause",
+  "Replay": "Replay",
+  "Current Time": "Current Time",
+  "Duration": "Duration",
+  "Remaining Time": "Remaining Time",
+  "Stream Type": "Stream Type",
+  "LIVE": "LIVE",
+  "Seek to live, currently behind live": "Seek to live, currently behind live",
+  "Seek to live, currently playing live": "Seek to live, currently playing live",
+  "Loaded": "Loaded",
+  "Progress": "Progress",
+  "Progress Bar": "Progress Bar",
+  "progress bar timing: currentTime={1} duration={2}": "{1} of {2}",
+  "Fullscreen": "Fullscreen",
+  "Non-Fullscreen": "Non-Fullscreen",
+  "Mute": "Mute",
+  "Unmute": "Unmute",
+  "Playback Rate": "Playback Rate",
+  "Subtitles": "Subtitles",
+  "subtitles off": "subtitles off",
+  "Captions": "Captions",
+  "captions off": "captions off",
+  "Chapters": "Chapters",
+  "Descriptions": "Descriptions",
+  "descriptions off": "descriptions off",
+  "Audio Track": "Audio Track",
+  "Volume Level": "Volume Level",
+  "You aborted the media playback": "You aborted the media playback",
+  "A network error caused the media download to fail part-way.": "A network error caused the media download to fail part-way.",
+  "The media could not be loaded, either because the server or network failed or because the format is not supported.": "The media could not be loaded, either because the server or network failed or because the format is not supported.",
+  "The media playback was aborted due to a corruption problem or because the media used features your browser did not support.": "The media playback was aborted due to a corruption problem or because the media used features your browser did not support.",
+  "No compatible source was found for this media.": "No compatible source was found for this media.",
+  "The media is encrypted and we do not have the keys to decrypt it.": "The media is encrypted and we do not have the keys to decrypt it.",
+  "Play Video": "Play Video",
+  "Close": "Close",
+  "Close Modal Dialog": "Close Modal Dialog",
+  "Modal Window": "Modal Window",
+  "This is a modal window": "This is a modal window",
+  "This modal can be closed by pressing the Escape key or activating the close button.": "This modal can be closed by pressing the Escape key or activating the close button.",
+  ", opens captions settings dialog": ", opens captions settings dialog",
+  ", opens subtitles settings dialog": ", opens subtitles settings dialog",
+  ", opens descriptions settings dialog": ", opens descriptions settings dialog",
+  ", selected": ", selected",
+  "captions settings": "captions settings",
+  "subtitles settings": "subititles settings",
+  "descriptions settings": "descriptions settings",
+  "Text": "Text",
+  "White": "White",
+  "Black": "Black",
+  "Red": "Red",
+  "Green": "Green",
+  "Blue": "Blue",
+  "Yellow": "Yellow",
+  "Magenta": "Magenta",
+  "Cyan": "Cyan",
+  "Background": "Background",
+  "Window": "Window",
+  "Transparent": "Transparent",
+  "Semi-Transparent": "Semi-Transparent",
+  "Opaque": "Opaque",
+  "Font Size": "Font Size",
+  "Text Edge Style": "Text Edge Style",
+  "None": "None",
+  "Raised": "Raised",
+  "Depressed": "Depressed",
+  "Uniform": "Uniform",
+  "Dropshadow": "Dropshadow",
+  "Font Family": "Font Family",
+  "Proportional Sans-Serif": "Proportional Sans-Serif",
+  "Monospace Sans-Serif": "Monospace Sans-Serif",
+  "Proportional Serif": "Proportional Serif",
+  "Monospace Serif": "Monospace Serif",
+  "Casual": "Casual",
+  "Script": "Script",
+  "Small Caps": "Small Caps",
+  "Reset": "Reset",
+  "restore all settings to the default values": "restore all settings to the default values",
+  "Done": "Done",
+  "Caption Settings Dialog": "Caption Settings Dialog",
+  "Beginning of dialog window. Escape will cancel and close the window.": "Beginning of dialog window. Escape will cancel and close the window.",
+  "End of dialog window.": "End of dialog window.",
+  "{1} is loading.": "{1} is loading."
+});
+
+    });
+});;
+
+require(
+[
+    'jquery',
+    'block_timeline/main',
+],
+function(
+    $,
+    Main
+) {
+    var root = $('#block-timeline-634690d1663da634690d1528152');
+    Main.init(root);
+});
+;
+M.util.js_pending('block_online_users/change_user_visibility'); require(['block_online_users/change_user_visibility'], function(amd) {amd.init(); M.util.js_complete('block_online_users/change_user_visibility');});;
+M.util.js_pending('tool_usertours/usertours'); require(['tool_usertours/usertours'], function(amd) {amd.init("2", false, 51008); M.util.js_complete('tool_usertours/usertours');});;
+
+  require(
+  [
+  'jquery',
+  'block_myoverview/main',
+  ],
+  function(
+  $,
+  Main
+  ) {
+  var root = $('#block-myoverview-634690d16e781634690d1528155');
+  Main.init(root);
+  });
+;
+
+require(['jquery'], function($) {
+    $('#single_select634690d1528158').change(function() {
+        var ignore = $(this).find(':selected').attr('data-ignore');
+        if (typeof ignore === typeof undefined) {
+            $('#single_select_f634690d1528157').submit();
+        }
+    });
+});
+;
+
+require(['jquery', 'message_popup/notification_popover_controller'], function($, controller) {
+    var container = $('#nav-notification-popover-container');
+    var controller = new controller(container);
+    controller.registerEventListeners();
+    controller.registerListNavigationEventListeners();
+});
+;
+
+require(['jquery'], function($) {
+    $('#single_select634690d15281511').change(function() {
+        var ignore = $(this).find(':selected').attr('data-ignore');
+        if (typeof ignore === typeof undefined) {
+            $('#single_select_f634690d15281510').submit();
+        }
+    });
+});
+;
+
+  M.util.js_pending('theme_boost/loader');
+  require(['theme_boost/loader'], function() {
+  M.util.js_complete('theme_boost/loader');
+  });
+  M.util.js_pending('theme_boost/drawer');
+  require(['theme_boost/drawer'], function(mod) {
+  mod.init();
+  M.util.js_complete('theme_boost/drawer');
+  });
+;
+M.util.js_pending('core/notification'); require(['core/notification'], function(amd) {amd.init(51008, []); M.util.js_complete('core/notification');});;
+M.util.js_pending('core/log'); require(['core/log'], function(amd) {amd.setConfig({"level":"warn"}); M.util.js_complete('core/log');});;
+M.util.js_pending('core/page_global'); require(['core/page_global'], function(amd) {amd.init(); M.util.js_complete('core/page_global');});M.util.js_complete("core/first");
+});
+//]]>
+</script>
+<script type="text/javascript">
+//<![CDATA[
+M.str = {"moodle":{"lastmodified":"Last modified","name":"Name","error":"Error","info":"Information","yes":"Yes","no":"No","cancel":"Cancel","confirm":"Confirm","areyousure":"Are you sure?","closebuttontitle":"Close","unknownerror":"Unknown error","file":"File","url":"URL"},"repository":{"type":"Type","size":"Size","invalidjson":"Invalid JSON string","nofilesattached":"No files attached","filepicker":"File picker","logout":"Logout","nofilesavailable":"No files available","norepositoriesavailable":"Sorry, none of your current repositories can return files in the required format.","fileexistsdialogheader":"File exists","fileexistsdialog_editor":"A file with that name has already been attached to the text you are editing.","fileexistsdialog_filemanager":"A file with that name has already been attached","renameto":"Rename to \"{$a}\"","referencesexist":"There are {$a} alias\/shortcut files that use this file as their source","select":"Select"},"admin":{"confirmdeletecomments":"You are about to delete comments, are you sure?","confirmation":"Confirmation"},"debug":{"debuginfo":"Debug info","line":"Line","stacktrace":"Stack trace"},"langconfig":{"labelsep":": "}};
+//]]>
+</script>
+<script type="text/javascript">
+//<![CDATA[
+(function() {Y.use("moodle-filter_mathjaxloader-loader",function() {M.filter_mathjaxloader.configure({"mathjaxconfig":"\nMathJax.Hub.Config({\n    config: [\"Accessible.js\", \"Safe.js\"],\n    errorSettings: { message: [\"!\"] },\n    skipStartupTypeset: true,\n    messageStyle: \"none\"\n});\n","lang":"en"});
+});
+ccnCommentHandler(Y, "Add a Comment & Review");
+ccnControl(Y, "http:\/\/elearning.almaata.ac.id\/theme\/edumy\/ccn\/visualize\/ccn_block\/jpeg\/large\/", "http:\/\/elearning.almaata.ac.id\/theme\/edumy\/ccn\/visualize\/ccn_block\/jpeg\/thumb\/", ["cocoon_about_1","cocoon_about_2","cocoon_accordion","cocoon_action_panels","cocoon_boxes","cocoon_blog_recent_slider","cocoon_faqs","cocoon_featured_posts","cocoon_features","cocoon_parallax","cocoon_parallax_apps","cocoon_parallax_counters","cocoon_parallax_features","cocoon_parallax_testimonials","cocoon_partners","cocoon_parallax_white","cocoon_pills","cocoon_price_tables","cocoon_price_tables_dark","cocoon_services","cocoon_services_dark","cocoon_simple_counters","cocoon_hero_1","cocoon_hero_2","cocoon_hero_3","cocoon_hero_4","cocoon_hero_5","cocoon_slider_1","cocoon_slider_1_v","cocoon_slider_2","cocoon_slider_3","cocoon_slider_4","cocoon_slider_5","cocoon_slider_6","cocoon_steps","cocoon_steps_dark","cocoon_subscribe","cocoon_tablets","cocoon_tabs","cocoon_tstmnls","cocoon_tstmnls_2","cocoon_contact_form","cocoon_course_categories","cocoon_course_categories_2","cocoon_course_categories_3","cocoon_course_categories_4","cocoon_course_overview","cocoon_course_instructor","cocoon_course_rating","cocoon_course_grid","cocoon_course_grid_2","cocoon_course_grid_3","cocoon_course_grid_4","cocoon_featuredcourses","cocoon_courses_slider","cocoon_more_courses","cocoon_users_slider","cocoon_users_slider_2","cocoon_users_slider_2_dark","cocoon_users_slider_round"], "38");
+M.util.help_popups.setup(Y);
+ M.util.js_pending('random634690d15281512'); Y.on('domready', function() { M.util.js_complete("init");  M.util.js_complete('random634690d15281512'); });
+})();
+//]]>
+</script>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  
+</body>
+
+</html>
